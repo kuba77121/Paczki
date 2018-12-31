@@ -22,7 +22,7 @@ $result = $mysqli->query($sql);
   $ile_tabel ;
   if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
-        echo '<button onclick="window.location.href=`'.$row["Tables_in_Pakowanie"].".php`".'">'.$row["Tables_in_Pakowanie"].'</button><br /><br style="line-height: 8px" />';
+        echo '<button onclick="window.location.href=`'.$row["Tables_in_pakowanie"].".php`".'">'.$row["Tables_in_pakowanie"].'</button><br /><br style="line-height: 8px" />';
     }
 } else {
     echo "brak tabel w bazie". $mysqli->error;
